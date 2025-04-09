@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{app.title}">Roar</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <img src="/animations/name-logo.png" alt="Logo" style="height: 100px;">
+    </div>
+
+    <div class="login-container">
+        <h2 th:text="#{app.login.message}">Login with GitHub</h2>
+        <div class="language-selector">
+            <a href="?lang=en">English</a> | <a href="?lang=pt">Português</a>
+        </div>
+        <div class="login-button">
+            <a href="/oauth2/authorization/github" class="github-login">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
