@@ -31,6 +31,7 @@ public class Roar {
         this.likes = 0;
     }
 
+    // Getters e setters
     public Long getId() {
         return id;
     }
